@@ -23,16 +23,12 @@ public class PersonaController {
     
     // Aquí puedes definir los métodos para manejar las solicitudes HTTP (GET, POST, PUT, DELETE)
     // y realizar las operaciones necesarias con la entidad Persona.
+
+    //AAAAAA
     
 
-    @GetMapping
-    public String saludar()
-    {
-        return "Hola";
-    } 
-
     @PostMapping
-    public Persona guardar(@RequestBody Persona persona){
+    public Persona postPersona(@RequestBody Persona persona){
         return personaService.guardarPersona(persona);
     } 
     
